@@ -1,28 +1,30 @@
-public class Leihstation{
+public class Leihstation {
     int stellPlätze = 20;
     int[] plätze = new int[stellPlätze];
 
-    public void neuesFahrrad(int fahrradNummer){
-        for (int i=0;i<plätze.length();i++){
-            if(plätze[i] != null){
-                plätze[i] = fahrradnummer;
+    public void neuesFahrrad(int fahrradNummer) {
+        for (int i = 0; i < plätze.length; i++) {
+            if (plätze[i] != 0) {
+                plätze[i] = fahrradNummer;
                 break;
             }
         }
     }
+
     public int fahrradAusleihen(){
-        for (int i=0;i<plätze.length();i++){
-            if(plätze[i] != null){
+        for (int i=0;i<plätze.length);i++){
+            if(plätze[i] != 0){
                 return plätze[i];
             }
         }
     }
-    public boolean istVerfügbar(){
-        for (int i=0;i<plätze.length();i++){
-            if(plätze[i] != null){
+
+    public boolean istVerfügbar() {
+        for (int i = 0; i < plätze.length; i++) {
+            if (plätze[i] != 0) {
                 return true;
             }
-            return false;
+        }
+        return false;
     }
-
 }

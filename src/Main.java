@@ -1,11 +1,11 @@
-import java.util.Arraylist;
+import java.util.ArrayList;
 
 
 public class Main{
     ArrayList<Benutzer> benutzer = new ArrayList<Benutzer>();
     
-    pulbic static void main(String[] args){
-        App gui = new App();
+    public static void main(String[] args){
+        GUI gui = new GUI();
     }
 
 }

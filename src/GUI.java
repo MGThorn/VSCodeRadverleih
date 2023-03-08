@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.Toolkit;
 import java.awt.Dimension;
 
-public class App {
+public class GUI {
     private JFrame frame;
     private Dimension dim;
 
@@ -21,7 +21,7 @@ public class App {
 
 
     public static void main(String[] args) throws Exception {
-        App app = new App();
+        GUI app = new GUI();
         app.initialize();
         //Lennard ist ein richtig geiler Hengst
         

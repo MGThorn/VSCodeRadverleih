@@ -7,6 +7,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         initialize();
+        //Lennard ist ein richtig geiler Hengst
         
     }
 

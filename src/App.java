@@ -1,21 +1,56 @@
 import javax.swing.*;
 import java.awt.Toolkit;
+import java.awt.Dimension;
 
 public class App {
-    private static JFrame frame;
+    private JFrame frame;
+    private Dimension dim;
+
+    private JLabel lblStationsnummer;
+    private JLabel lblKundennummer;
+
+    private JButton bAusleihe;
+    private JButton bRückgabe;
+    private JButton bRegistrieren;
+
+    private JTextField txtStationsnummer;
+    private JTextField txtKundennummer;
+    private JTextField txtAusgabe;
+
+
 
 
     public static void main(String[] args) throws Exception {
-        initialize();
+        App app = new App();
+        app.initialize();
         //Lennard ist ein richtig geiler Hengst
         
     }
 
-
-    private static void initialize() {
+    
+    private void initialize() {
         frame = new JFrame();
+        dim = Toolkit.getDefaultToolkit().getScreenSize();
+
+        frame.setSize(dim);
+        frame.setUndecorated(true);
+        frame.setAlwaysOnTop(true);
         frame.setVisible(true);
-        frame.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+
+        lblKundennummer = new JLabel("Kundennummer");
+        lblKundennummer = new JLabel("Kundennummer");
+
+
+        frame.add(lblStationsnummer);
+        frame.add(lblKundennummer);
+        frame.add(txtStationsnummer);
+        frame.add(txtKundennummer);
+        frame.add(txtAusgabe);
+        frame.add(bRegistrieren);
+        frame.add(bRückgabe);
+        frame.add(bAusleihe);
+
+
         
     }
 }

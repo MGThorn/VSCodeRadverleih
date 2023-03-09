@@ -10,7 +10,7 @@ public class GUI {
     private JLabel lblKundennummer;
 
     private AusleihButton bAusleihe;
-    private JButton bRückgabe;
+    private RückgabeButton bRückgabe;
     private JButton bRegistrieren;
 
     JTextField txtStationsnummer;
@@ -38,9 +38,10 @@ public class GUI {
         frame.setVisible(true);
 
         lblKundennummer = new JLabel("Kundennummer");
-        lblKundennummer = new JLabel("Kundennummer");
+        lblStationsnummer = new JLabel("Stationsnummer");
 
         bAusleihe = new AusleihButton(this);
+        bRückgabe = new RückgabeButton(this);
 
 
         frame.add(lblStationsnummer);

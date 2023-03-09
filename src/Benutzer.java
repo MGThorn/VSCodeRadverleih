@@ -11,7 +11,7 @@ public class Benutzer{
         return name;
     }
     public int getKundenNummer(){
-        return name;
+        return kundenNummer;
     }
 
 }

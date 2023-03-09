@@ -9,20 +9,20 @@ public class GUI {
     private JLabel lblStationsnummer;
     private JLabel lblKundennummer;
 
-    private JButton bAusleihe;
+    private AusleihButton bAusleihe;
     private JButton bRückgabe;
     private JButton bRegistrieren;
 
-    private JTextField txtStationsnummer;
-    private JTextField txtKundennummer;
-    private JTextField txtAusgabe;
+    JTextField txtStationsnummer;
+    JTextField txtKundennummer;
+    JTextField txtAusgabe;
 
 
 
 
-    public static void main(String[] args) throws Exception {
-        GUI app = new GUI();
-        app.initialize();
+    public GUI() throws Exception {
+        
+        this.initialize();
         //Lennard ist ein richtig geiler Hengst
         
     }
@@ -39,6 +39,8 @@ public class GUI {
 
         lblKundennummer = new JLabel("Kundennummer");
         lblKundennummer = new JLabel("Kundennummer");
+
+        bAusleihe = new AusleihButton(this);
 
 
         frame.add(lblStationsnummer);

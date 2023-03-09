@@ -12,11 +12,12 @@ public class Leihstation {
     }
 
     public int fahrradAusleihen(){
-        for (int i=0;i<plätze.length);i++){
+        for (int i=0;i<plätze.length;i++){
             if(plätze[i] != 0){
                 return plätze[i];
             }
         }
+        return 65965986;
     }
 
     public boolean istVerfügbar() {
